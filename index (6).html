@@ -6,21 +6,29 @@
     <title>AMWMusic!|PlayList</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
     <div class="app">
         <aside class="menu-aside">
             <div class="logo">
-                <span class="i-logo i-logo2"><i class="fab fa-spotify s-logo"></i> AMWMusic!</span>
+                <span class="i-logo i-logo2"><i class=""></i> Mi reproductor!</span>
+                <img id="imgPortada" src="Imagenes\play.png" width="50" height="50">
             </div>
+            <span></span>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            </div>
+            <span></span>
             <ul class="playlists" id="menuMusic">
-                <li class="playlist"><a href="#" class="play playEstudiar" id="cargarEstudiar">Estudiar</a></li>
-                <li class="playlist" ><a href="#" class="play playRock">Rock</a></li>
-                <li class="playlist"><a href="#" class="play playDeporte">Deporte</a></li>
+                <li class="playlist"><a href="#" class="play playEstudiar" id="cargarEstudiar">Resultados del buscador</a></li>
+                <li class="playlist" ><a href="#" class="play playRock">My playlist</a></li>
+                <li class="playlist"><a href="#" class="play playDeporte">Favoritos</a></li>
             </ul>
         </aside>
+        
         <div class="album" id="album">
             <div class="user">
                 <a href="#" class="close" id="close"><i class="far fa-times-circle"></i></a>
@@ -31,12 +39,13 @@
             </div>
             <div class="album-description">
                     <div class="album-img">
-                        <img id="imgAlbum" src="assets/img/f-princi.jpg" width="250" height="150">
+                        <img id="imgAlbum" src="Imagenes\Caratula_general.jpeg" width="650" height="400">
                     </div>
                     <div class="album-text">
                         <div class="title">
                             <span>Playlist:</span>
-                            <h2 id="titlePlaylist">Seleccione su playlist</h2>
+                            <h2 id="titlePlaylist">Nombre de la cancion</h2>
+                            <h2 id="titlePlaylist">Artista</h2>
                         </div>
                         <div class="description">
                             <p id="playDescription">Reproduzca la playlist de su agrado !!!</p>
